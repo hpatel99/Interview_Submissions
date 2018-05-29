@@ -3,10 +3,8 @@
 #include "Solution.h"
 class TestCase
 {
+public:
 	static int ValidateAll();
-	static int CheckEdgeCondition();
-	static int CheckIrregulaData();
-	static int CheckRegularData();
 
 };
 

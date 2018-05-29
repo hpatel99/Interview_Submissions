@@ -1,6 +1,14 @@
 #include "Solution.h"
 #include <algorithm>
 
+
+// Return value -(int)It returns the year with most number of people alive.
+// 
+// Assumptions: -Number of birth and end year provided should be same.
+//				-Data is realistic. that is birth year is always greater than end year.
+// TimeComplexity -The solution is O(n log n). Maximum time is used by sorting if we are certain that 
+//					data is presorted . better runtime can be achieved by eliminating sorting.
+
 int Solution::FindMostPopulateYear(int birth[], int end[], int Size)
 {
 	//Sorting both list in ascending orders 
@@ -32,7 +40,7 @@ int Solution::FindMostPopulateYear(int birth[], int end[], int Size)
 
 
 
-			conductorOfBirth++;
+			conductorOfBirth++;		//increment the conductor
 
 		}
 		else
